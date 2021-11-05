@@ -55,7 +55,7 @@ function setTimer() {
 
 function startTimer() {
     clearInterval(interval); // очищаем интервал, пауза
-    interval = setInterval(setTimer, 100); // запускаем таймер
+    interval = setInterval(setTimer, 1000); // запускаем таймер
 
     startButton.removeEventListener('click', startTimer);
     startButton.addEventListener('click', pauseClearTimer);
